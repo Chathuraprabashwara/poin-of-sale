@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.3</version> <!-- Update this to the latest stable version -->
+		<version>3.2.11</version> <!-- Update this to the latest stable version -->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.pos.kuppiya</groupId>
@@ -13,19 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>point-of-sale</name>
 	<description>Demo project for Spring Boot</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -46,18 +34,13 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.vladmihalcea</groupId>
-			<artifactId>hibernate-types-55</artifactId>
-			<version>2.21.1</version> <!-- Use the latest version -->
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.vladmihalcea</groupId>
-			<artifactId>hibernate-types-55</artifactId>
+			<artifactId>hibernate-types-60</artifactId>
 			<version>2.21.1</version> <!-- Use the latest version -->
 		</dependency>
 		<dependency>

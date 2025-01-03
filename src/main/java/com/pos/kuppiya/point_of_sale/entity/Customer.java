@@ -1,15 +1,15 @@
 package com.pos.kuppiya.point_of_sale.entity;
 
-import com.vladmihalcea.hibernate.type.json.JsonType;
+
 import jakarta.persistence.*;
-import org.hibernate.annotations.Type;
-import org.springframework.data.util.QTypeContributor;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
+
 
 import java.util.ArrayList;
 
 @Entity
 @Table(name = "customer")
-@Type
 public class Customer {
     @Id
     @Column(name = "cutomer_id", length = 45)
@@ -24,6 +24,7 @@ public class Customer {
     @Column(name = "custom_salary", length = 25)
     private double customerSalary;
 
+    @JdbcTypeCode(SqlTypes.JSON)
     @Column(name = "contact_numbers", columnDefinition = "json")
     private ArrayList<String> contactNumbers;
 
